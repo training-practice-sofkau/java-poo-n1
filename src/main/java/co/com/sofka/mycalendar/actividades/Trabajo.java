@@ -10,8 +10,13 @@ public class Trabajo  extends Actividad implements Programable {
         if (titulo.isBlank()) {
             throw new IllegalArgumentException("El titulo no es valido");
         }
-        @Override
-        public void agregarRepeticion ( int repeticiones){
+
         }
+
+    @Override
+    public void agregarRepeticion(int repeticiones) {
+
     }
 }
+
+
