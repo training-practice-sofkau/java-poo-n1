@@ -20,8 +20,14 @@ public class Calendario {
      * @param cantidadHoras nos indica la cantidad de horas disponibles por día
      */
     public Calendario(List<Actividad> actividadList,int cantidadHoras){
+
         this.actividadList=actividadList;
     }
+
+    /**
+     * Nos permite crear actividades desde el calendario.
+     * @param actividad nos da la actividad a realizar por la persona.
+     */
     public void agregarActividad(Actividad actividad){
         actividadList.add(actividad);
     }

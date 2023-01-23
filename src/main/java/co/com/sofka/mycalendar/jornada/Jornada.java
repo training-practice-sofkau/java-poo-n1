@@ -10,7 +10,6 @@ public abstract class Jornada {
     public boolean isTiempoLaboral() {
         return tiempoLaboral;
     }
-
     /**
      * Nos permite asignar un valor de verdad a la jornada para saber si es laboral o no.
      * @param tiempoLaboral nos indica por medio de un boolean si es tiempo laboral o no.
