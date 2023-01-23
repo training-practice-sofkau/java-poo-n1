@@ -1,9 +1,7 @@
 package co.com.sofka.mycalendar.tiempo;
 
 
-
-
-public enum  DiaSemana {
+public enum DiaSemana {
 
     LUNES,
     MARTES,
