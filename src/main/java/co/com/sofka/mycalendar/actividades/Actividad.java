@@ -21,6 +21,8 @@ public abstract class Actividad {
         this.fechaFinal = fechaFinal;
     }
 
+
+
     public void cambiarFechaInical(LocalDate fechaInicial){
         this.fechaInicial = fechaInicial;
     }

@@ -5,7 +5,7 @@ import java.time.LocalTime;
 public class Tarde implements Jornada{
     @Override
     public LocalTime horaInicial() {
-        return LocalTime.of(14, 0);
+        return LocalTime.of(12, 0);
     }
 
     @Override
