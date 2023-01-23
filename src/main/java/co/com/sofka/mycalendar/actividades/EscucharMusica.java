@@ -1,2 +1,4 @@
-package co.com.sofka.mycalendar.actividades;public class EscucharMusica {
+package co.com.sofka.mycalendar.actividades;
+
+public class EscucharMusica {
 }
