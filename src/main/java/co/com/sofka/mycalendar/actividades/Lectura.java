@@ -9,7 +9,6 @@ public class Lectura extends Actividad implements Programable {
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }
-
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){

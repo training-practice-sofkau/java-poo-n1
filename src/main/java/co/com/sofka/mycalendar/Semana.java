@@ -14,3 +14,6 @@ public enum Semana {
         }
     }
 }
+/* Me di cuenta tarde de que se trabaja con fechas enteras y no solo la hora.
+* Luego a la hora de trabajar lo que pensaba hacer, diseñé esta lógica con días y cantidad de semanas
+* Muy poco tiempo tuvimos, para lo tostados que estamos :( */
