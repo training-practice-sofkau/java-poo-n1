@@ -12,7 +12,9 @@ public class Viajes extends Actividad implements Laborable {
 
     public Viajes(String lugar, LocalDate fechaFinal){
         this(lugar, LocalDate.now(), fechaFinal);
+
     }
+
     @Override
     public boolean esValido() {
         return false;
