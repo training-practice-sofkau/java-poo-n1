@@ -1,6 +1,5 @@
 package co.com.sofka.mycalendar;
 import co.com.sofka.mycalendar.calendario.Semana;
-
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -61,6 +60,10 @@ public class Main {
         }
         return 0;
     }
+
+    /**
+     * Este método nos permite crear la actividad que el usuario desea.
+     */
     public static void creacionDeActividad(){
         String [] actividad=new String[5];
         String [] fecha=new String[3];
