@@ -14,7 +14,7 @@ public class Lectura extends Actividad implements Programable {
 
         //TODO: validen las fechas
         if(fechaInicial.isAfter(fechaFinal)) {
-            System.out.println("Las fecha inicial debe ser una fecha menor a la inicial");
+            System.out.println("La fecha inicial debe ser una fecha menor a la final");
         }
 
 

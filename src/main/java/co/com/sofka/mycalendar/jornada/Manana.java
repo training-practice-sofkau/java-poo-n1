@@ -17,6 +17,6 @@ public class Manana implements Jornada, Laborable {
 
     @Override
     public boolean esValido() {
-        return false;
+        return true;
     }
 }
