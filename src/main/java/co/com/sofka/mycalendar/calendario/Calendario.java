@@ -14,7 +14,6 @@ public class Calendario {
     public Calendario() {
         this.actividadList=new ArrayList<Actividad>();
     }
-
     /**
      * Constructor inicializando los atributos.
      * @param actividadList nos indica las actividades que tendrá el día
