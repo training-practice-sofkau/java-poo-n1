@@ -3,17 +3,7 @@ package co.com.sofka.mycalendar.actividades;
 import co.com.sofka.mycalendar.interfaces.Laborable;
 import co.com.sofka.mycalendar.interfaces.Programable;
 
-public class EjercicioFísico extends Actividad implements Programable, Laborable {
-    /**
-     * Nos permite validar si es una actividad laboral
-     *
-     * @return nos devuelve si es verdadero o falso si la actividad es laboral o no.
-     */
-    @Override
-    public boolean isValido() {
-        return false;
-    }
-
+public class EjercicioFísico extends Actividad implements Programable{
     /**
      * Nos permite hacer que una actividad se repita cierta cantidad de veces.
      *
