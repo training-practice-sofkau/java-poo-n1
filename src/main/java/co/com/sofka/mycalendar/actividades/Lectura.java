@@ -1,6 +1,7 @@
 package co.com.sofka.mycalendar.actividades;
 
 import co.com.sofka.mycalendar.Programable;
+import co.com.sofka.mycalendar.tiempo.Calendario;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -38,4 +39,6 @@ public class Lectura extends Actividad implements Programable {
     public void agregarRepeticion(int repeticiones) {
 
     }
+
+
 }

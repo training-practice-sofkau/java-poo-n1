@@ -25,4 +25,9 @@ public class Trabajo extends Actividad implements Programable {
     public boolean esValido() {
         return false;
     }
+
+
+    public void addTrabajo(String titulo){
+
+    }
 }
