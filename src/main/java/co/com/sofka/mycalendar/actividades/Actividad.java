@@ -1,5 +1,6 @@
 package co.com.sofka.mycalendar.actividades;
 
+import co.com.sofka.mycalendar.Enums.Journeys;
 import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.time.LocalDate;
@@ -8,7 +9,7 @@ public abstract class Actividad {
     private String titulo;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
-    private Jornada jornada;
+    private Journeys jornada;
 
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
@@ -41,11 +42,20 @@ public abstract class Actividad {
         return fechaFinal;
     }
 
-    public Jornada jornada() {
+    public Journeys jornada() {
         return jornada;
     }
 
-    public void setJornada(Jornada jornada) {
+    public void setJornada(Journeys jornada) {
         this.jornada = jornada;
+    }
+
+    @Override
+    public String toString() {
+        return "Actividad:" +
+                "titulo='" + titulo + '\'' +
+                ", fechaInicial=" + fechaInicial +
+                ", fechaFinal=" + fechaFinal +
+                ", jornada=" + jornada ;
     }
 }

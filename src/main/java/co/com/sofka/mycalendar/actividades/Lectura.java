@@ -12,10 +12,8 @@ public class Lectura extends Actividad implements Programable {
             throw new IllegalArgumentException("El titulo no es valido");
         }
         if(fechaFinal == null || fechaFinal == null){
-            throw new IllegalArgumentException("La fecha esta vacia");
+            throw new IllegalArgumentException("No envio fecha");
         }
-
-        //TODO: validen las fechas
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){
