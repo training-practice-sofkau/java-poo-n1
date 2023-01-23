@@ -10,14 +10,16 @@ public class Calendario {
 
     private List<Actividad> actividadList;
 
-    public Calendario() {
-        this.actividadList = new ArrayList<>();
-    }
 
+    public Calendario() {
+
+        this.actividadList = new ArrayList<>();
+
+    }
 
     public void agregarActividad(Actividad actividad){
+
         actividadList.add(actividad);
     }
-
 
 }
