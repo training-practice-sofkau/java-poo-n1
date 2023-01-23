@@ -18,8 +18,8 @@ Existen actividades como tal que se diseñan de manera programada, es decir tien
 - Realizar minimo 5 commits
 - Tiene 4 horas para el desarrollo del programa
 - Trabajar con dos interfaces y dos clases abstractas 
-- Utilizar la clase Calendario para crear las actividades
-- Utilizar la clase Main para ejeuctar el programa
+- Utilizar la clase co.com.sofka.mycalendar.calendario.Calendario para crear las actividades
+- Utilizar la clase co.com.sofka.mycalendar.Main para ejeuctar el programa
 - Aplicar polimorfismo en la creación de actividades
 - Aplicar enumeradores en los dias de la semana
 - Usar el objeto LocalDate para las fechas 
