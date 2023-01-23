@@ -4,7 +4,7 @@ import co.com.sofka.mycalendar.actividades.Actividad;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Clase Calendario
 public class Calendario {
 
     private List<Actividad> actividadList;
