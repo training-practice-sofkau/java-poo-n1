@@ -4,8 +4,9 @@ import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.time.LocalDate;
 
+// Clase abstracta que contiene las características básicas de una actividad. s
 public abstract class Actividad {
-    
+
     private String titulo;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;

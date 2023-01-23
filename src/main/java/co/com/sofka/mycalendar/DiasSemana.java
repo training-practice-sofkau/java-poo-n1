@@ -1,7 +1,7 @@
 package co.com.sofka.mycalendar;
 
-public class DiasSemana {
-    enum dias {
+//Clase tipo enum, la cual contiene enumeradores en los dias de la semana
+public enum DiasSemana {
         LUNES,
         MARTES,
         MIERCOLES,
@@ -9,5 +9,4 @@ public class DiasSemana {
         VIERNES,
         SABADO,
         DOMINGO
-    }
 }

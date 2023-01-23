@@ -25,19 +25,23 @@ public class Main {
                     "4. Salir.");
             opcion = entrada.nextInt();
 
-
-
             switch (opcion) {
                 case 1:
-                    System.out.println("op 1");
+                    System.out.println("Actividades: \n" +
+                            "Ejercicio \n" +
+                            "Lectura \n" +
+                            "Tareas \n" +
+                            "Trabajo \n" +
+                            "Escuchar música \n");
+                    System.out.println("Digite la actividad que desea agregar: \n");
                     break;
 
                 case 2:
-                    System.out.println("op 2");
+                    System.out.println("Digite el nombre de la actividad que desea modificar: \n");
                     break;
 
                 case 3:
-                    System.out.println("op 3 ");
+                    System.out.println("Digite el nombre de la actividad que desea eliminar: \n");
                     break;
 
                 case 4:
