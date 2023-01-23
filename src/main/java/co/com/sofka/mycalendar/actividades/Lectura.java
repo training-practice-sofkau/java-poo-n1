@@ -14,6 +14,8 @@ public class Lectura extends Actividad implements Programable {
         if(fechaFinal == null || fechaFinal == null){
             throw new IllegalArgumentException("No envio fecha");
         }
+
+
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){

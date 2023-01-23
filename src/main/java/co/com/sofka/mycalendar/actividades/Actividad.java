@@ -11,10 +11,13 @@ public abstract class Actividad {
     private LocalDate fechaFinal;
     private Journeys jornada;
 
+    private int repeticiones = 1;
+
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
+        this.repeticiones=repeticiones;
     }
 
     public void cambiarFechas(LocalDate fechaInicial, LocalDate fechaFinal){
@@ -50,12 +53,22 @@ public abstract class Actividad {
         this.jornada = jornada;
     }
 
+    public int getRepeticiones() {
+        return repeticiones;
+    }
+
+    public void setRepeticiones(int repeticiones) {
+        this.repeticiones = repeticiones;
+    }
+
     @Override
     public String toString() {
-        return "Actividad:" +
+        return "Actividad{" +
                 "titulo='" + titulo + '\'' +
                 ", fechaInicial=" + fechaInicial +
                 ", fechaFinal=" + fechaFinal +
-                ", jornada=" + jornada ;
+                ", jornada=" + jornada +
+                ", repeticiones=" + repeticiones +
+                '}';
     }
 }
