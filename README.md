@@ -25,4 +25,9 @@ Existen actividades como tal que se diseñan de manera programada, es decir tien
 - Usar el objeto LocalDate para las fechas
 
 
-*Realizado por Jonathan Vargas :star:* 
+*Realizado por Jonathan Vargas :star:*
+
+*Última modificación con aportes de:*
+- *Gretty Mosquera*
+- *Estiven Ramírez*
+- *Cristian Alvarado*

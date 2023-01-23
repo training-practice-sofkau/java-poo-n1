@@ -10,6 +10,8 @@ public abstract class Actividad {
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
     private Jornada jornada;
+    private int horaInicial;
+    private int horaFinal;
 
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
@@ -53,5 +55,12 @@ public abstract class Actividad {
         } else {
             throw new IllegalArgumentException("La actividad no coincide con las horas de la jornada indicada");
         }
+    }
+    public void setHoraInicial(int horaInicial){
+        this.horaInicial = horaInicial;
+    }
+
+    public void setHoraFinal(int horaFinal) {
+        this.horaFinal = horaFinal;
     }
 }

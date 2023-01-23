@@ -17,10 +17,19 @@ public class Calendario {
 
     public void agregarActividad(Actividad actividad, Semana semana, DiaSemana dia) {
         actividadList.add(actividad);
-//TODO: Agregar lógica compatible con la lógica de almacenado de semanas y días
+
     }
 
     public void agregarSemana(Semana semana) {
         semanaList.add(semana);
     }
+
+    public List<Actividad> getActividadList() {
+        return actividadList;
+    }
+
+    public List<Semana> getSemanaList() {
+        return semanaList;
+    }
+
 }
