@@ -10,8 +10,8 @@ public class Lectura extends Actividad implements Programable, Jornada {
 
 
 
-    public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal);
+    public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada) {
+        super(titulo, fechaInicial, fechaFinal, jornada);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }
@@ -21,9 +21,7 @@ public class Lectura extends Actividad implements Programable, Jornada {
         }
     }
 
-    public Lectura(String titulo, LocalDate fechaFinal){
-        this(titulo, LocalDate.now(), fechaFinal);
-    }
+
 
 
     @Override

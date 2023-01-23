@@ -12,10 +12,12 @@ public abstract class Actividad{
     private Jornada jornada;
     private DiasSem diasSemana;
 
-    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada) {
         this.titulo = titulo;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
+        this.jornada = jornada();
+        this.diasSemana = DiasSem.LUNES;
     }
 
     public void cambiarFechas(LocalDate fechaInicial, LocalDate fechaFinal){
