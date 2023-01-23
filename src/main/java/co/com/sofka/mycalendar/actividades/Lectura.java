@@ -13,6 +13,9 @@ public class Lectura extends Actividad implements Programable {
         }
 
         //TODO: validen las fechas
+        if (fechaInicial.isAfter(fechaFinal)){
+            throw new IllegalArgumentException("La fecha inicial no puede ser mayor a la fecha final");
+        }
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){
