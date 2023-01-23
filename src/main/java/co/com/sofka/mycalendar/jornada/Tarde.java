@@ -4,7 +4,7 @@ import co.com.sofka.mycalendar.condiciones.Laborable;
 
 import java.time.LocalTime;
 
-public class Tarde implements Jornada, Laborable {
+public class Tarde implements Jornada {
     @Override
     public LocalTime horaInicial() {
         return LocalTime.of(14, 0);
@@ -15,8 +15,5 @@ public class Tarde implements Jornada, Laborable {
         return LocalTime.of(18, 0);
     }
 
-    @Override
-    public boolean esValido() {
-        return true;
-    }
+
 }
