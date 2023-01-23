@@ -13,6 +13,11 @@ public class Lectura extends Actividad implements Programable {
         }
 
         //TODO: validen las fechas
+        if(fechaInicial.isAfter(fechaFinal)) {
+            System.out.println("Las fecha inicial debe ser una fecha menor a la inicial");
+        }
+
+
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){
@@ -21,6 +26,6 @@ public class Lectura extends Actividad implements Programable {
 
     @Override
     public void agregarRepeticion(int repeticiones) {
-
+        System.out.println("Se repite la actividad "+repeticiones+" dia(s)");
     }
 }
