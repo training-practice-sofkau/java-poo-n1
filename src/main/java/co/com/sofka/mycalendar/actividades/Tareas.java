@@ -4,9 +4,8 @@ import co.com.sofka.mycalendar.Programable;
 
 import java.time.LocalDate;
 
-public class Lectura extends Actividad implements Programable {
-
-    public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+public class Tareas extends Actividad implements Programable {
+    public Tareas(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
@@ -17,13 +16,6 @@ public class Lectura extends Actividad implements Programable {
         else if(fechaInicial.isAfter(fechaFinal)){
             throw new IllegalArgumentException("La fecha inicial va antes e la final");
         }
-
-        //TODO: validen las fechas
-    }
-
-    public Lectura(String titulo, LocalDate fechaFinal){
-
-        this(titulo, LocalDate.now(), fechaFinal);
     }
 
     @Override

@@ -13,9 +13,17 @@ public class Calendario {
         this.actividadList = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        return "Calendario{" +
+                "actividadList=" + actividadList +
+                '}';
+    }
 
     public void agregarActividad(Actividad actividad){
+
         actividadList.add(actividad);
+        System.out.println(actividadList);
     }
 
 

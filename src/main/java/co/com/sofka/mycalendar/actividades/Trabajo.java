@@ -1,12 +1,12 @@
 package co.com.sofka.mycalendar.actividades;
 
+import co.com.sofka.mycalendar.Laborable;
 import co.com.sofka.mycalendar.Programable;
 
 import java.time.LocalDate;
 
-public class Lectura extends Actividad implements Programable {
-
-    public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+public class Trabajo extends Actividad implements Programable, Laborable {
+    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
@@ -17,17 +17,15 @@ public class Lectura extends Actividad implements Programable {
         else if(fechaInicial.isAfter(fechaFinal)){
             throw new IllegalArgumentException("La fecha inicial va antes e la final");
         }
-
-        //TODO: validen las fechas
-    }
-
-    public Lectura(String titulo, LocalDate fechaFinal){
-
-        this(titulo, LocalDate.now(), fechaFinal);
     }
 
     @Override
     public void agregarRepeticion(int repeticiones) {
 
+    }
+
+    @Override
+    public boolean esValido() {
+        return false;
     }
 }
