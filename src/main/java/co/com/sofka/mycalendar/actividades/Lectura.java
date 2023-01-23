@@ -10,7 +10,6 @@ public class Lectura extends Actividad implements Programable {
             throw new IllegalArgumentException("El titulo no es valido");
         }
 
-        //TODO: validen las fechas
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){
