@@ -13,8 +13,7 @@ public class Lectura extends Actividad implements Programable {
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }
-        else {
-            (fechaInicial.isAfter(fechaFinal);
+         if (fechaInicial.isAfter(fechaFinal)){
             System.out.println("Su hora del evento ya paso!!!");
         }
     }
