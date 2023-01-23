@@ -1,14 +1,13 @@
 package co.com.sofka.mycalendar.jornada;
 import java.time.LocalTime;
-
-public class Tarde implements Jornada{
+public class Mañana implements Jornada{
     @Override
     public LocalTime horaInicial() {
-        return LocalTime.of(13, 0);
+        return LocalTime.of(8,0);
     }
 
     @Override
     public LocalTime horaFinal() {
-        return LocalTime.of(18, 0);
+        return LocalTime.of(11, 0);
     }
 }
