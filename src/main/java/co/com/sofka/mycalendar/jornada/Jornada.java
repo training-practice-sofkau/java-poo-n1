@@ -1,7 +1,6 @@
 package co.com.sofka.mycalendar.jornada;
 import java.time.LocalTime;
 public abstract class Jornada {
-
     /**
      * Nos indica la hora en la que inicia la jornada.
      * @return nos devuelve la hora inicial de la jornada en variable LocalTime.

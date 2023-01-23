@@ -1,4 +1,4 @@
-package co.com.sofka.mycalendar;
+package co.com.sofka.mycalendar.interfaces;
 public interface Programable {
      void agregarRepeticion(int repeticiones);
 }
