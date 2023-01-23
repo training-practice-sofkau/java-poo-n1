@@ -16,35 +16,34 @@ public class Main {
          */
         do {
             Scanner entrada = new Scanner(System.in);
-            System.out.println("Bienvenido(a) aquí podrás administrar tus actividades\n" +
+            System.out.println("Bienvenido(a), aquí podrás administrar tus actividades\n" +
                     "Calendario \uD83D\uDCC5\n" +
-                    "Por favor digite la opción desea: \n" +
-                    "1. Agregar\n" +
-                    "2. Modificar\n" +
-                    "3. Eliminar\n" +
-                    "4. Salir.");
+                    "Por favor digita la actividad que deseas: \n" +
+                    "1. Lectura\n" +
+                    "2. Actividad física\n" +
+                    "3. Trabajo\n" +
+                    "4. Tareas\n" +
+                    "5. Salir");
             opcion = entrada.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Actividades: \n" +
-                            "Ejercicio \n" +
-                            "Lectura \n" +
-                            "Tareas \n" +
-                            "Trabajo \n" +
-                            "Escuchar música \n");
-                    System.out.println("Digite la actividad que desea agregar: \n");
+                    System.out.println("1: \n");
                     break;
 
                 case 2:
-                    System.out.println("Digite el nombre de la actividad que desea modificar: \n");
+                    System.out.println("2: \n");
                     break;
 
                 case 3:
-                    System.out.println("Digite el nombre de la actividad que desea eliminar: \n");
+                    System.out.println("3: \n");
                     break;
 
                 case 4:
+                    System.out.println("4: \n");
+                    break;
+
+                case 5:
                     System.exit(0);
                     break;
                 /**
@@ -53,6 +52,6 @@ public class Main {
                 default:
                     System.out.println("Número no valido");
             }
-        } while (opcion!=4);
+        } while (opcion!=5);
     }
 }
