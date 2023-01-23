@@ -1,5 +1,6 @@
 package co.com.sofka.mycalendar.actividades;
 
+import co.com.sofka.mycalendar.DiaSemana;
 import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.time.LocalDate;
@@ -9,6 +10,8 @@ public abstract class Actividad {
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
     private Jornada jornada;
+
+    private DiaSemana diasemana;
 
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
@@ -48,4 +51,8 @@ public abstract class Actividad {
     public void setJornada(Jornada jornada) {
         this.jornada = jornada;
     }
+
+
 }
+
+

@@ -16,6 +16,12 @@ public class Lectura extends Actividad implements Programable {
         if (fechaInicial.isAfter(fechaFinal)){
             throw new IllegalArgumentException("La fecha inicial no puede ser mayor a la fecha final");
         }
+        if (fechaInicial.isBefore(LocalDate.now())){
+            throw new IllegalArgumentException("La fecha inicial no puede ser menor a la fecha actual");
+        }
+        if (fechaFinal.isBefore(LocalDate.now())){
+            throw new IllegalArgumentException("La fecha final no puede ser menor a la fecha actual");
+        }
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){

@@ -1,4 +1,7 @@
 package co.com.sofka.mycalendar;
+
+import co.com.sofka.mycalendar.actividades.Actividad;
+
 //comentario
 public class Main {
 
