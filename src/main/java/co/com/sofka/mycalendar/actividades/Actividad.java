@@ -4,7 +4,7 @@ import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.time.LocalDate;
 
-public abstract class Actividad {
+public abstract class Actividad{
     private String titulo;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
@@ -48,4 +48,5 @@ public abstract class Actividad {
     public void setJornada(Jornada jornada) {
         this.jornada = jornada;
     }
+    public abstract void agregarRepeticion(int repeticiones);
 }
