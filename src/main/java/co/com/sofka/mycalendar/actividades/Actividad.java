@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 public abstract class Actividad {
     private String titulo;
+
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
     private Jornada jornada;
