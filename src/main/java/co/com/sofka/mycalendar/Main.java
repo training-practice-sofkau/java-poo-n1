@@ -8,17 +8,31 @@ import co.com.sofka.mycalendar.actividades.Lectura;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        LocalDate horaInicio = LocalDate.of(2023,1,9);
-        LocalDate horaFinal = LocalDate.of(2023,1,15);
 
-        Actividad lectura = new Lectura("Hacer ejercicio",horaInicio,horaFinal);
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Actividad ");
+        String horaFinal = (s.nextLine());
+        System.out.println("Nueva FechaInicio año-mes-dia ");
+        String horaInicio = (s.nextLine());
+        System.out.println("Nueva FechaFinal  año-mes-dia ");
+
+        String desc1 = s.nextLine();
+        System.out.println(horaInicio+horaFinal);
+         LocalDate horaInicioParse = LocalDate.parse(horaInicio);
+         LocalDate horaFinalParse = LocalDate.parse(horaFinal);
+
+      /*  Actividad lectura = new Lectura("Hacer ejercicio",horaInicio,horaFinal);
         lectura.setJornada(Journeys.MORNING);
         System.out.println(lectura.toString());
-        Calendario calendario = new Calendario();
+        Calendario calendario = new Calendario();*/
+
+
 
     }
 
