@@ -9,11 +9,21 @@ public enum DiasDeSemana implements Laborable {
     JUEVES(true),
     VIERNES(true),
     SABADO(false),
-    DOMINGO(false);
+    DOMINGO(false),
+}
+
+
+
+
+
+
+
+
+
 
     @Override
     public boolean esValido() {
-
+    if (Laboral)
 
 
         return false;

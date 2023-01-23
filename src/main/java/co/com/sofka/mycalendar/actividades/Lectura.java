@@ -22,5 +22,10 @@ public class Lectura extends Actividad implements Programable {
     @Override
     public void agregarRepeticion(int repeticiones) {
 
+
+
+
+
+
     }
 }
