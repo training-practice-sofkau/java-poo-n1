@@ -27,10 +27,11 @@ public class Trabajar extends Actividad implements Laborable {
             case JUEVES:
             case VIERNES:
                 System.out.println("El día "+ dia + "es laborable");
+                return true;
             case SABADO:
             case DOMINGO:
                 System.out.println("El día "+ dia + "no es laborable");
-                return true;
+                return false;
         }
         return false;
     }
