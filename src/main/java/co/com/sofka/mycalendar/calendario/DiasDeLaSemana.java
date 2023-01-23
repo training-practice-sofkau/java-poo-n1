@@ -10,7 +10,9 @@ public enum DiasDeLaSemana {
     Martes,
     Miercoles,
     Jueves,
-    Viernes;
+    Viernes,
+    Sabado,
+    Domingo;
     /**
      * Acá encontramos los atributos que tendrán los días de la semana.
      */
