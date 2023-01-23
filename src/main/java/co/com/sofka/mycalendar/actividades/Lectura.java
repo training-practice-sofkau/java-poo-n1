@@ -2,6 +2,7 @@ package co.com.sofka.mycalendar.actividades;
 import co.com.sofka.mycalendar.interfaces.Laborable;
 import co.com.sofka.mycalendar.interfaces.Programable;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -20,9 +21,14 @@ public class Lectura extends Actividad implements Programable, Laborable {
         this(titulo, LocalDate.now(), fechaFinal,duracion);
     }
 
+    /**
+     * Nos permite hacer que una actividad se repita cierta cantidad de veces.
+     *
+     * @param repeticiones nos indica la cantidad de días que se repetirá la actividad.
+     */
     @Override
     public void agregarRepeticion(int repeticiones) {
-
+        
     }
 
     /**
