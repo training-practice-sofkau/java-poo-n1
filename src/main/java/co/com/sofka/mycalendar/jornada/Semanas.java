@@ -6,6 +6,7 @@ public class Semanas {
     public static void main (String[]args) {
         Scanner ingreso = new Scanner(System.in);
         int numero;
+        int opcion;
 
         System.out.print("Hola Usuario, ingresa  del 1(lunes) al 7(domingo) el dia que vas a agendar:");
         if (ingreso.hasNextInt()) {
@@ -39,5 +40,15 @@ public class Semanas {
             }
         } else
             System.err.println("Por favor ingrese solo el numero correspondiente al dia");
+
+        System.out.print("Selecciona la actividad a agendar: 1. Ejercicio Fisico, 2.Lectura, 3.Tareas, 4. Trabajo:");
+        opcion= ingreso.nextInt();
+
+        switch (opcion){
+            case 1:
+
+
+
+        }
 
     }}
