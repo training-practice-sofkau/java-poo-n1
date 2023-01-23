@@ -7,6 +7,13 @@ public class Ejercicio extends Actividad implements Programable{
 
     public Ejercicio(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
+        if(titulo.isBlank()){
+            throw new IllegalArgumentException("El titulo no es valido");
+        }
+
+        if(fechaInicial.isAfter(fechaFinal)){
+            throw new IllegalArgumentException("La fechas no coinciden");
+        }
     }
 
     @Override
