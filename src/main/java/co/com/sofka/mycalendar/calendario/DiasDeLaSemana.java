@@ -1,15 +1,15 @@
 package co.com.sofka.mycalendar.calendario;
 public enum DiasDeLaSemana {
-    Lunes(new Dia()),
-    Martes(new Dia()),
-    Miercoles(new Dia()),
-    Jueves(new Dia()),
-    Viernes(new Dia());
-    private final Dia actividades;
-    DiasDeLaSemana(Dia actividades){
+    Lunes(new Calendario()),
+    Martes(new Calendario()),
+    Miercoles(new Calendario()),
+    Jueves(new Calendario()),
+    Viernes(new Calendario());
+    private final Calendario actividades;
+    DiasDeLaSemana(Calendario actividades){
         this.actividades=actividades;
     }
-    public Dia getActividades(){
+    public Calendario getActividades(){
         return actividades;
     }
 }
