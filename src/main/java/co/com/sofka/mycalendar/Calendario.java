@@ -1,7 +1,6 @@
 package co.com.sofka.mycalendar;
 
 import co.com.sofka.mycalendar.actividades.Actividad;
-
 import java.util.ArrayList;
 import java.util.List;
 
