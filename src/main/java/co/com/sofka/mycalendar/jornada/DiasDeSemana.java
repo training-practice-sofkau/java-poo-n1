@@ -1,12 +1,21 @@
 package co.com.sofka.mycalendar.jornada;
 
-public enum DiasDeSemana {
-    LUNES,
-    MARTES,
-    MIERCOLES,
-    JUEVES,
-    VIERNES,
-    SABADO,
-    DOMINGO
+import co.com.sofka.mycalendar.Laborable;
 
+public enum DiasDeSemana implements Laborable {
+    LUNES(true),
+    MARTES(true),
+    MIERCOLES(true),
+    JUEVES(true),
+    VIERNES(true),
+    SABADO(false),
+    DOMINGO(false);
+
+    @Override
+    public boolean esValido() {
+
+
+
+        return false;
+    }
 }
