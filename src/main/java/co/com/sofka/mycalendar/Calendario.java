@@ -1,24 +1,26 @@
 package co.com.sofka.mycalendar;
 
 import co.com.sofka.mycalendar.actividades.Actividad;
+import co.com.sofka.mycalendar.dias.Dia;
 import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Calendario {
-
-    private List<Actividad> actividadList;
-    private List<Jornada> jornadaList;
-
+    private List<Actividad> actividades;
+    private List<Jornada> jornadas;
+    private List<Dia> dias;
 
     public Calendario() {
-        this.actividadList = new ArrayList<>();
+        this.actividades = new ArrayList<>();
+        this.jornadas = new ArrayList<>();
+        this.dias = new ArrayList<>();
     }
 
 
-    public void agregarActividad(Actividad actividad){
-        actividadList.add(actividad);
+    public void addActividad(Actividad actividad){
+        actividades.add(actividad);
     }
 
 

@@ -6,6 +6,7 @@ import co.com.sofka.mycalendar.jornada.Jornada;
 import java.time.LocalDate;
 
 public class Lectura extends Actividad implements Programable {
+    private int repeticiones;
 
     public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada) {
         super(titulo, fechaInicial, fechaFinal, jornada);
@@ -24,9 +25,11 @@ public class Lectura extends Actividad implements Programable {
         this(titulo, LocalDate.now(), fechaFinal, jornada);
     }
 
-
     @Override
     public void agregarRepeticion(int repeticiones) {
-
+        if(repeticiones < 0) {
+            throw new IllegalArgumentException("El numero de repeticiones no puede ser negativo");
+        }
+        this.repeticiones = repeticiones;
     }
 }

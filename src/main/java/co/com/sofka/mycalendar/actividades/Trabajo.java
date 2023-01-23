@@ -1,9 +1,36 @@
 package co.com.sofka.mycalendar.actividades;
 
+import co.com.sofka.mycalendar.condiciones.Programable;
+import co.com.sofka.mycalendar.jornada.Jornada;
+
 import java.time.LocalDate;
 
-public class Trabajo extends Actividad {
-    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal);
+public class Trabajo extends Actividad implements Programable {
+    private int repeticiones;
+    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada) {
+        super(titulo, fechaInicial, fechaFinal, jornada);
+        if(titulo.isBlank()) {
+            throw new IllegalArgumentException("El titulo no es valido");
+        }
+        if(fechaFinal.isBefore(fechaInicial)) {
+            throw new IllegalArgumentException("La fecha final es antes de la inicial");
+        }
+        else if(fechaInicial.isAfter(fechaFinal)){
+            throw new IllegalArgumentException("La fecha inicial es despues de la final");
+        }
+    }
+
+    public Trabajo(String titulo, LocalDate fechaFinal, Jornada jornada){
+        this(titulo, LocalDate.now(), fechaFinal, jornada);
+    }
+
+
+
+    @Override
+    public void agregarRepeticion(int repeticiones) {
+        if(repeticiones < 0) {
+            throw new IllegalArgumentException("El numero de repeticiones no puede ser negativo");
+        }
+        this.repeticiones = repeticiones;
     }
 }
