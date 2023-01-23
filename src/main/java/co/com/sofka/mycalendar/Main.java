@@ -8,6 +8,8 @@ import co.com.sofka.mycalendar.actividades.Lectura;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,15 +17,23 @@ public class Main {
     public static void main(String[] args) {
 
 
+        List<String> myList = new ArrayList<>();
+        myList.add("Correr");
+        myList.add("Saltar");
+        myList.add("Viajar");
+
+        for (String currentElement : myList) {
+            int contador = 1 ;
+            int contador2 =++contador ;
+            LocalDate horaInicioParse = LocalDate.of(2022,0+contador2,03);
+            LocalDate horaFinalParse = LocalDate.of(2022,03,0+contador2);
+            Actividad lectura = new Lectura(currentElement,horaInicioParse,horaFinalParse);
+            lectura.setJornada(Journeys.MORNING);
+            System.out.println(lectura.toString());
+            Calendario calendario = new Calendario();
+        }
 
 
-         LocalDate horaInicioParse = LocalDate.of(2022,02,02);
-         LocalDate horaFinalParse = LocalDate.of(2022,02,03);
-
-       Actividad lectura = new Lectura("Hacer ejercicio",horaInicioParse,horaFinalParse);
-        lectura.setJornada(Journeys.MORNING);
-        System.out.println(lectura.toString());
-        Calendario calendario = new Calendario();
 
     }
 
