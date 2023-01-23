@@ -1,10 +1,10 @@
 package co.com.sofka.mycalendar.actividades;
-
 import co.com.sofka.mycalendar.jornada.Jornada;
-
 import java.time.LocalDate;
-
 public abstract class Actividad {
+    /**
+     * Aqui tenemos los atributos de la clase abstracta Actividad
+     */
     private String titulo;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
