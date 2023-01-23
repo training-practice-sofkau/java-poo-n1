@@ -22,6 +22,13 @@ public class Calendario {
     public void addActividad(Actividad actividad){
         actividades.add(actividad);
     }
+    public void addJornada(Jornada jornada) {
+        jornadas.add(jornada);
+    }
+    public void addDia(Dia dia) {
+        dias.add(dia);
+    }
+
 
 
 }
