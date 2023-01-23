@@ -22,4 +22,7 @@ Existen actividades como tal que se diseñan de manera programada, es decir tien
 - Utilizar la clase co.com.sofka.mycalendar.Main para ejeuctar el programa
 - Aplicar polimorfismo en la creación de actividades
 - Aplicar enumeradores en los dias de la semana
-- Usar el objeto LocalDate para las fechas 
+- Usar el objeto LocalDate para las fechas
+
+
+*Realizado por Jonathan Vargas :star:* 
