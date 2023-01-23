@@ -1,2 +1,15 @@
-package co.com.sofka.mycalendar.jornada;public class Noche {
+package co.com.sofka.mycalendar.jornada;
+
+import java.time.LocalTime;
+
+public class Noche implements Jornada{
+    @Override
+    public LocalTime horaInicial() {
+        return LocalTime.of(19, 00);
+    }
+
+    @Override
+    public LocalTime horaFinal() {
+        return LocalTime.of(4, 00);
+    }
 }
