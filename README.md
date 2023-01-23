@@ -1,4 +1,4 @@
-#Taller de POO en Java
+# Taller de POO en Java
 
 A continuación veremos el taller relacionado a programación orientada a objetos en java, en este taller vamos a validar lo siguiente:
 
