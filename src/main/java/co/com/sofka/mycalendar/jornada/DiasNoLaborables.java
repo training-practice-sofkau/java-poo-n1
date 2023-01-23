@@ -2,10 +2,10 @@ package co.com.sofka.mycalendar.jornada;
 
 import java.time.LocalTime;
 
-public class Noche implements Jornada {
+public class DiasNoLaborables implements Jornada{
     @Override
     public LocalTime horaInicial() {
-        return LocalTime.of(18, 0);
+        return LocalTime.of(06, 0);
     }
 
 
