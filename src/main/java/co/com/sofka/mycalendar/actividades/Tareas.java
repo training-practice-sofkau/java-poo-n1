@@ -5,8 +5,8 @@ import co.com.sofka.mycalendar.condiciones.Programable;
 
 import java.time.LocalDate;
 
-public class Trabajo extends Actividad implements Laborable, Programable {
-    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+public class Tareas extends Actividad implements Laborable, Programable {
+    public Tareas(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
     }
 
