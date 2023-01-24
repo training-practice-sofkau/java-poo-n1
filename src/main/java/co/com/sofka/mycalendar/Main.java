@@ -8,7 +8,7 @@ import co.com.sofka.mycalendar.jornada.Manana;
 public class Main {
     public static void main(String[] args) {
         Calendario calendario = new Calendario();
-
+//Comentario de prueba
         /*
         Deporte trotar = new Deporte("trotar",
                 new Manana(8,30).horaInicial(),
