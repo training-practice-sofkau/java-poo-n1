@@ -1,7 +1,6 @@
 package co.com.sofka.mycalendar.diassemana;
 
-public enum DiasSemana
-{
+public enum DiasSemana {
     Lunes,
     Martes,
     Miercoles,
