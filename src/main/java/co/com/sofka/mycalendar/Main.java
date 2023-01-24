@@ -3,38 +3,35 @@ package co.com.sofka.mycalendar;
 
 
 import co.com.sofka.mycalendar.actividades.Actividad;
-import co.com.sofka.mycalendar.actividades.EjercicioFisico;
-import co.com.sofka.mycalendar.actividades.Lectura;
-import co.com.sofka.mycalendar.actividades.Trabajo;
 import co.com.sofka.mycalendar.jornada.Jornada;
 import co.com.sofka.mycalendar.jornada.Mañana;
 import co.com.sofka.mycalendar.jornada.Noche;
-import co.com.sofka.mycalendar.jornada.Tarde;
+
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Main {
 
     public static void main(String[] args) {
 
         Calendario calendario = new Calendario();
-        Jornada jornada1 = new Tarde();
-        Jornada jornada2 = new Mañana();
-        Jornada jornada3 = new Noche();
+        Jornada jornadaMañana = new Mañana();
+        Jornada jornadaNoche = new Noche();
 
+        LocalDate fechaInicial = LocalDate.of(2022, 1, 1);
+        LocalDate fechaFinal = LocalDate.of(2022, 12, 31);
 
-        Actividad actividad1 = new Lectura("Lectura de cuento", LocalDate.of(2022,10,1), LocalDate.of(2022,10,5), jornada1);
-        Actividad actividad2 = new EjercicioFisico("Yoga", LocalDate.of(2022,10,1), LocalDate.of(2022,10,5), jornada2);
-        Actividad actividad3 = new Trabajo("Realizar informe", LocalDate.of(2022,10,1), LocalDate.of(2022,10,5), jornada3);
+        calendario.addActividadLectura("Libro de programación", fechaInicial, fechaFinal, jornadaMañana);
+        calendario.addActividadLectura("Libro de matemáticas", fechaInicial, fechaFinal, jornadaNoche);
 
-
-        List<Actividad> actividades = new ArrayList<>();
-        actividades.add(actividad1);
-        actividades.add(actividad2);
-        actividades.add(actividad3);
-
-
+        for (Actividad actividad : calendario.getActividades()) {
+            System.out.println("-----------------------");
+            System.out.println("Título de la actividad: " + actividad.titulo());
+            System.out.println("Fecha inicial: " + actividad.fechaInicial());
+            System.out.println("Fecha final: " + actividad.fechaFinal());
+            System.out.println("Jornada: " + actividad.jornada());
+            System.out.println("-----------------------");
+        }
     }
 }

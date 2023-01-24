@@ -1,6 +1,5 @@
 package co.com.sofka.mycalendar.jornada;
 
-import co.com.sofka.mycalendar.condiciones.Laborable;
 
 import java.time.LocalTime;
 

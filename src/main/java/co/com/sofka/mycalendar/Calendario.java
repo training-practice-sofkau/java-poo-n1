@@ -21,14 +21,13 @@ public class Calendario {
         this.actividades = actividades;
     }
 
+    public List<Actividad> getActividades() {
+        return actividades;
+    }
+
 
     public void addActividadLectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada){
         actividades.add(new Lectura(titulo, fechaInicial, fechaFinal, jornada));
     }
-
-
-
-
-
 
 }
