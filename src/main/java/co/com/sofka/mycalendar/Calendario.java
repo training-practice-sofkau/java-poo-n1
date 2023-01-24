@@ -13,10 +13,7 @@ public class Calendario {
         this.actividadList = new ArrayList<>();
     }
 
-
     public void agregarActividad(Actividad actividad){
         actividadList.add(actividad);
     }
-
-
 }

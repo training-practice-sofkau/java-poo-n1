@@ -12,8 +12,8 @@ public abstract class Actividad {
 
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
-        this.fechaInicial = fechaInicial;
-        this.fechaFinal = fechaFinal;
+        this.fechaInicial = LocalDate.from(fechaInicial);
+        this.fechaFinal = LocalDate.from(fechaFinal);
     }
 
     public void cambiarFechas(LocalDate fechaInicial, LocalDate fechaFinal){
