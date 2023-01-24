@@ -10,10 +10,15 @@ public abstract class Actividad {
     private LocalDate fechaFinal;
     private Jornada jornada;
 
-    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada) {
         this.titulo = titulo;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
+        this.jornada = jornada;
+    }
+
+    public Jornada getJornada() {
+        return jornada;
     }
 
     public void cambiarFechas(LocalDate fechaInicial, LocalDate fechaFinal){
@@ -42,6 +47,7 @@ public abstract class Actividad {
     }
 
     public Jornada jornada() {
+        
         return jornada;
     }
 
