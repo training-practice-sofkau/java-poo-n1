@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Calendario calendario = new Calendario();
+        Calendario calendario = new Calendario();
         LocalDate fechaFinal = LocalDate.of(2023,7,15);
         Tarde tarde= new Tarde();
         Lectura libro = new Lectura("hola mundo",fechaFinal,tarde);

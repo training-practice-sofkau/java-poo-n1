@@ -3,15 +3,15 @@ package co.com.sofka.mycalendar.jornada;
 import java.time.LocalTime;
 
 
-    public class Manana implements Jornada{
+    public class Noche implements Jornada{
         @Override
         public LocalTime horaInicial() {
-            return LocalTime.of(8, 0);
+            return LocalTime.of(20, 0);
         }
 
         @Override
         public LocalTime horaFinal() {
-            return LocalTime.of(12, 0);
+            return LocalTime.of(23, 0);
         }
     }
 
