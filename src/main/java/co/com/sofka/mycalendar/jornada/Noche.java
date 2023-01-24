@@ -10,6 +10,7 @@ public class Noche  implements  Jornada{
 
     @Override
     public LocalTime horaFinal() {
+
         return LocalTime.of(6,0);
     }
 }

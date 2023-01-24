@@ -1,18 +1,17 @@
 package co.com.sofka.mycalendar.actividades;
 
-import co.com.sofka.mycalendar.DiasSemana;
 import co.com.sofka.mycalendar.condiciones.Laborable;
+import co.com.sofka.mycalendar.semana.DiasSemana;
 import co.com.sofka.mycalendar.condiciones.Programable;
 import co.com.sofka.mycalendar.jornada.Jornada;
-import co.com.sofka.mycalendar.jornada.Noche;
 
 import java.time.LocalDate;
 
 
-public class EjercicioFisico  extends Actividad implements Programable, Laborable {
+public class EjercicioFisico  extends Actividad implements Programable{
 
     private int repeticiones;
-    public EjercicioFisico(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada, DiasSemana diasSemana) {
+    public EjercicioFisico(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
@@ -26,8 +25,8 @@ public class EjercicioFisico  extends Actividad implements Programable, Laborabl
         }
     }
 
-    public EjercicioFisico(String titulo, LocalDate fechaFinal, Jornada jornada, DiasSemana diasSemana) {
-        this(titulo, LocalDate.now(), fechaFinal, jornada, diasSemana);
+    public EjercicioFisico(String titulo, LocalDate fechaFinal) {
+        this(titulo, LocalDate.now(), fechaFinal);
     }
 
     @Override
@@ -39,11 +38,5 @@ public class EjercicioFisico  extends Actividad implements Programable, Laborabl
 
     }
 
-    @Override
-    public boolean esValido() {
 
-
-
-        return !(jornada() instanceof Noche);
-    }
 }

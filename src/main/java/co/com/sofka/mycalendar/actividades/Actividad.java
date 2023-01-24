@@ -1,6 +1,6 @@
 package co.com.sofka.mycalendar.actividades;
 
-import co.com.sofka.mycalendar.DiasSemana;
+import co.com.sofka.mycalendar.semana.DiasSemana;
 import co.com.sofka.mycalendar.jornada.Jornada;
 
 import java.time.LocalDate;

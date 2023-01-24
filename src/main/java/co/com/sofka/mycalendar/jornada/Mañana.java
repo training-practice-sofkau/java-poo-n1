@@ -10,6 +10,7 @@ public class Mañana implements Jornada{
 
     @Override
     public LocalTime horaFinal() {
+
         return LocalTime.of(11, 59);
     }
 }

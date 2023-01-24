@@ -5,7 +5,8 @@ import co.com.sofka.mycalendar.condiciones.Programable;
 
 import java.time.LocalDate;
 
-public class Trabajo extends Actividad implements Laborable, Programable {
+public class Trabajo extends Actividad implements Programable {
+    private int repeticiones;
     public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
@@ -20,13 +21,14 @@ public class Trabajo extends Actividad implements Laborable, Programable {
         }
     }
 
-    @Override
-    public boolean esValido() {
-        return false;
-    }
+
 
     @Override
     public void agregarRepeticion(int repeticiones) {
+        if(repeticiones < 0 ){
+            throw new IllegalArgumentException("Ingresa un valor mayor que 0");
+        }
+        this.repeticiones = repeticiones;
 
     }
 }
