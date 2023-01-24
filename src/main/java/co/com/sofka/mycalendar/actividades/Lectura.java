@@ -7,12 +7,19 @@ import java.time.LocalDate;
 public class Lectura extends Actividad implements Programable {
 
     public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal);
+        super(titulo, fechaInicial, fechaFinal, jornada);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }
+       //DO: validación de fecha
+        if(fechaInicial.isBefore(fechaFinal)){
+            throw new IllegalArgumentException("Error en la cronología del tiempo");
+        }
+        if(fechaFinal().isAfter(fechaInicial)){
+            throw new IllegalArgumentException("Error en la cronología del tiempo");
+        }
 
-        //TODO: validen las fechas
+
     }
 
     public Lectura(String titulo, LocalDate fechaFinal){

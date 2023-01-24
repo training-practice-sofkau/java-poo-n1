@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class Trabajo extends Actividad implements Laborable, Programable {
     public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal);
+        super(titulo, fechaInicial, fechaFinal, jornada);
     }
 
     @Override

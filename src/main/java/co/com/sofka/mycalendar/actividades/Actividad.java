@@ -10,14 +10,18 @@ public abstract class Actividad {
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
     private Jornada jornada;
-
     private DiasSemana diasSemana;
 
-    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
+    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada, DiasSemana diasSemana) {
         this.titulo = titulo;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
+        this.jornada = jornada;
+        this.diasSemana = DiasSemana.LUNES;
+
     }
+
+
 
     public void cambiarFechas(LocalDate fechaInicial, LocalDate fechaFinal){
         this.fechaInicial = fechaInicial;
@@ -25,10 +29,12 @@ public abstract class Actividad {
     }
 
     public void cambiarFechaInical(LocalDate fechaInicial){
+
         this.fechaInicial = fechaInicial;
     }
 
     public void cambiarFechaFinal(LocalDate fechaFinal){
+
         this.fechaFinal = fechaFinal;
     }
 

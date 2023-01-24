@@ -5,11 +5,11 @@ import java.time.LocalTime;
 public class Noche  implements  Jornada{
     @Override
     public LocalTime horaInicial() {
-        return null;
+        return LocalTime.of(19,0);
     }
 
     @Override
     public LocalTime horaFinal() {
-        return null;
+        return LocalTime.of(6,0);
     }
 }
