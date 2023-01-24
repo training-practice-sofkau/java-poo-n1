@@ -1,7 +1,6 @@
 package co.com.sofka.mycalendar.actividades;
 
-import co.com.sofka.mycalendar.Laborable;
-import co.com.sofka.mycalendar.Programable;
+import co.com.sofka.mycalendar.interfaces.Laborable;
 
 import java.time.LocalDate;
 
