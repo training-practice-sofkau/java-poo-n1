@@ -21,6 +21,8 @@ public class Lectura extends Actividad implements Programable {
 
     @Override
     public void agregarRepeticion(int repeticiones) {
-
+        if (repeticiones <0){
+            System.out.println("Introdujo un número negativo");
+        }
     }
 }

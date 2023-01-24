@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Calendario {
 
+
+
     private List<Actividad> actividadList;
 
     public Calendario() {
