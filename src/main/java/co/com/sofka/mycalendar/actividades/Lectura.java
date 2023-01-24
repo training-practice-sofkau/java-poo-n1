@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class Lectura extends Actividad implements Programable {
 
     public Lectura(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal, jornada);
+        super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }

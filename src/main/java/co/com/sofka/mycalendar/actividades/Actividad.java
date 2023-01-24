@@ -12,7 +12,7 @@ public abstract class Actividad {
     private Jornada jornada;
     private DiasSemana diasSemana;
 
-    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada, DiasSemana diasSemana) {
+    public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;

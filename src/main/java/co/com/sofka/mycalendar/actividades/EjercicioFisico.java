@@ -13,7 +13,7 @@ public class EjercicioFisico  extends Actividad implements Programable, Laborabl
 
     private int repeticiones;
     public EjercicioFisico(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada, DiasSemana diasSemana) {
-        super(titulo, fechaInicial, fechaFinal, jornada, diasSemana);
+        super(titulo, fechaInicial, fechaFinal);
         if(titulo.isBlank()){
             throw new IllegalArgumentException("El titulo no es valido");
         }
@@ -43,9 +43,7 @@ public class EjercicioFisico  extends Actividad implements Programable, Laborabl
     public boolean esValido() {
 
 
-         if(){
-             return false;
-         }
+
         return !(jornada() instanceof Noche);
     }
 }
