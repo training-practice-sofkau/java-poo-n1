@@ -9,9 +9,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Calendario calendario = new Calendario();
+        int numActividades;
 
-        Actividad actividad[] = new
+        System.out.println("Calendario");
+        System.out.println("");
     }
 
-    }
 }
+

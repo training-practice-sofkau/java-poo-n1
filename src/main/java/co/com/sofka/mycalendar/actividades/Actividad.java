@@ -1,7 +1,7 @@
 package co.com.sofka.mycalendar.actividades;
 
 import co.com.sofka.mycalendar.Calendario;
-import co.com.sofka.mycalendar.jornada.Jornada;
+import co.com.sofka.mycalendar.jornada.Manana;
 
 import java.time.LocalDate;
 
@@ -9,7 +9,7 @@ public abstract class Actividad  extends Calendario {
     private String titulo;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
-    private Jornada jornada;
+    private Manana.Jornada jornada;
 
     public Actividad(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
         this.titulo = titulo;
@@ -44,11 +44,11 @@ public abstract class Actividad  extends Calendario {
         return fechaFinal;
     }
 
-    public Jornada jornada() {
+    public Manana.Jornada jornada() {
         return jornada;
     }
 
-    public void setJornada(Jornada jornada) {
+    public void setJornada(Manana.Jornada jornada) {
         this.jornada = jornada;
     }
 }

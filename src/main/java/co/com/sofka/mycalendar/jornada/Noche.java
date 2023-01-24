@@ -2,7 +2,7 @@ package co.com.sofka.mycalendar.jornada;
 
 import java.time.LocalTime;
 
-public class Noche implements Jornada{
+public class Noche implements Manana.Jornada {
     @Override
     public LocalTime horaInicial() {
         return LocalTime.of(18,0);
