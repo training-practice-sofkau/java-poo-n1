@@ -4,6 +4,10 @@ import java.time.LocalTime;
 
 public class Tarde implements Jornada{
     @Override
+    public String nombreJornada() {
+        return "Tarde";
+    }
+    @Override
     public LocalTime horaInicial() {
         return LocalTime.of(14, 0);
     }

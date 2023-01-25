@@ -15,5 +15,6 @@ public class Calendario {
 
     public void agregarActividad(Actividad actividad){
         actividadList.add(actividad);
+        System.out.println("Nueva actividad '"+ actividad.titulo() + "ha sido agregada al calendario");
     }
 }

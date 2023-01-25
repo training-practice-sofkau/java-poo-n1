@@ -4,12 +4,17 @@ import java.time.LocalTime;
 
 public class Manana implements Jornada{
     @Override
+    public String nombreJornada() {
+        return "Manaña";
+    }
+
+    @Override
     public LocalTime horaInicial() {
-        return LocalTime.of(14, 0);
+        return LocalTime.of(8, 0);
     }
 
     @Override
     public LocalTime horaFinal() {
-        return LocalTime.of(18, 0);
+        return LocalTime.of(12, 0);
     }
 }

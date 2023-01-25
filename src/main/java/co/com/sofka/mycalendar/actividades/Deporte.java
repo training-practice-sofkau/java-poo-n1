@@ -12,7 +12,7 @@ public class Deporte extends Actividad implements Programable{
         super(titulo, fechaInicial, fechaFinal);
     }
     @Override
-    public void agregarRepeticion(int repeticiones) throws IllegalAccessException {
-
+    public void agregarRepeticion(){
+        System.out.println("Esta actividad se repite cada semana");
     }
 }
