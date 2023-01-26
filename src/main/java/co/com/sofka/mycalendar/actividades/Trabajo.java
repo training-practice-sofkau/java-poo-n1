@@ -3,6 +3,7 @@ package co.com.sofka.mycalendar.actividades;
 import co.com.sofka.mycalendar.Calendario;
 import co.com.sofka.mycalendar.Dia;
 import co.com.sofka.mycalendar.Laborable;
+import co.com.sofka.mycalendar.Programable;
 import co.com.sofka.mycalendar.jornada.Jornada;
 import co.com.sofka.mycalendar.jornada.Manana;
 import co.com.sofka.mycalendar.jornada.Noche;
@@ -17,8 +18,8 @@ public class Trabajo extends Actividad implements Laborable, Jornada {
 
 
 
-    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal) {
-        super(titulo, fechaInicial, fechaFinal);
+    public Trabajo(String titulo, LocalDate fechaInicial, LocalDate fechaFinal, Jornada jornada, Programable programable) {
+        super(titulo, fechaInicial, fechaFinal, jornada, programable);
     }
     
 
@@ -29,9 +30,8 @@ public class Trabajo extends Actividad implements Laborable, Jornada {
         Dia d = Dia;
         if (d == Dia.SABADO || d == Dia.DOMINGO) {
             return false;
-        } else {
-            return true;
         }
+        return false;
     }
 
 
